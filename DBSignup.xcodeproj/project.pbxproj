@@ -1,0 +1,329 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6B26FB1713C23F98000766DE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B26FB1613C23F98000766DE /* UIKit.framework */; };
+		6B26FB1913C23F98000766DE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B26FB1813C23F98000766DE /* Foundation.framework */; };
+		6B26FB1B13C23F98000766DE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B26FB1A13C23F98000766DE /* CoreGraphics.framework */; };
+		6B26FB2113C23F98000766DE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6B26FB1F13C23F98000766DE /* InfoPlist.strings */; };
+		6B26FB2413C23F98000766DE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B26FB2313C23F98000766DE /* main.m */; };
+		6B26FB2713C23F98000766DE /* DBSignupAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B26FB2613C23F98000766DE /* DBSignupAppDelegate.m */; };
+		6B26FB2A13C23F98000766DE /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B26FB2813C23F98000766DE /* MainWindow.xib */; };
+		6B26FB2D13C23F98000766DE /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B26FB2C13C23F98000766DE /* RootViewController.m */; };
+		6B26FB3013C23F98000766DE /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B26FB2E13C23F98000766DE /* RootViewController.xib */; };
+		6B41E3EF13C26BDE00A35DD6 /* male.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B41E3EC13C26BDE00A35DD6 /* male.png */; };
+		6B41E3F013C26BDE00A35DD6 /* female.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B41E3ED13C26BDE00A35DD6 /* female.png */; };
+		6B41E3F113C26BDE00A35DD6 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B41E3EE13C26BDE00A35DD6 /* background.png */; };
+		6B41E3F513C26CF500A35DD6 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 6B41E3F413C26CF500A35DD6 /* LICENSE */; };
+		6B71DD7613C268DD00FD23B0 /* DBSignupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B71DD7413C268DD00FD23B0 /* DBSignupViewController.m */; };
+		6B71DD7713C268DD00FD23B0 /* DBSignupViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B71DD7513C268DD00FD23B0 /* DBSignupViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6B26FB1213C23F98000766DE /* DBSignup.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DBSignup.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B26FB1613C23F98000766DE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		6B26FB1813C23F98000766DE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		6B26FB1A13C23F98000766DE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		6B26FB1E13C23F98000766DE /* DBSignup-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DBSignup-Info.plist"; sourceTree = "<group>"; };
+		6B26FB2013C23F98000766DE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6B26FB2213C23F98000766DE /* DBSignup-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DBSignup-Prefix.pch"; sourceTree = "<group>"; };
+		6B26FB2313C23F98000766DE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6B26FB2513C23F98000766DE /* DBSignupAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBSignupAppDelegate.h; sourceTree = "<group>"; };
+		6B26FB2613C23F98000766DE /* DBSignupAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DBSignupAppDelegate.m; sourceTree = "<group>"; };
+		6B26FB2913C23F98000766DE /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		6B26FB2B13C23F98000766DE /* RootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		6B26FB2C13C23F98000766DE /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		6B26FB2F13C23F98000766DE /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/RootViewController.xib; sourceTree = "<group>"; };
+		6B41E3EC13C26BDE00A35DD6 /* male.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = male.png; sourceTree = "<group>"; };
+		6B41E3ED13C26BDE00A35DD6 /* female.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = female.png; sourceTree = "<group>"; };
+		6B41E3EE13C26BDE00A35DD6 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
+		6B41E3F413C26CF500A35DD6 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		6B71DD7313C268DD00FD23B0 /* DBSignupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBSignupViewController.h; sourceTree = "<group>"; };
+		6B71DD7413C268DD00FD23B0 /* DBSignupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBSignupViewController.m; sourceTree = "<group>"; };
+		6B71DD7513C268DD00FD23B0 /* DBSignupViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DBSignupViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6B26FB0F13C23F98000766DE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B26FB1713C23F98000766DE /* UIKit.framework in Frameworks */,
+				6B26FB1913C23F98000766DE /* Foundation.framework in Frameworks */,
+				6B26FB1B13C23F98000766DE /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6B26FB0713C23F97000766DE = {
+			isa = PBXGroup;
+			children = (
+				6B26FB1C13C23F98000766DE /* DBSignup */,
+				6B26FB1513C23F98000766DE /* Frameworks */,
+				6B26FB1313C23F98000766DE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6B26FB1313C23F98000766DE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6B26FB1213C23F98000766DE /* DBSignup.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6B26FB1513C23F98000766DE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6B26FB1613C23F98000766DE /* UIKit.framework */,
+				6B26FB1813C23F98000766DE /* Foundation.framework */,
+				6B26FB1A13C23F98000766DE /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6B26FB1C13C23F98000766DE /* DBSignup */ = {
+			isa = PBXGroup;
+			children = (
+				6B41E3F313C26BF400A35DD6 /* Images */,
+				6B71DD8913C26B8900FD23B0 /* Views */,
+				6B71DD7313C268DD00FD23B0 /* DBSignupViewController.h */,
+				6B71DD7413C268DD00FD23B0 /* DBSignupViewController.m */,
+				6B26FB2513C23F98000766DE /* DBSignupAppDelegate.h */,
+				6B26FB2613C23F98000766DE /* DBSignupAppDelegate.m */,
+				6B26FB2B13C23F98000766DE /* RootViewController.h */,
+				6B26FB2C13C23F98000766DE /* RootViewController.m */,
+				6B41E3F413C26CF500A35DD6 /* LICENSE */,
+				6B26FB1D13C23F98000766DE /* Supporting Files */,
+			);
+			path = DBSignup;
+			sourceTree = "<group>";
+		};
+		6B26FB1D13C23F98000766DE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6B26FB1E13C23F98000766DE /* DBSignup-Info.plist */,
+				6B26FB1F13C23F98000766DE /* InfoPlist.strings */,
+				6B26FB2213C23F98000766DE /* DBSignup-Prefix.pch */,
+				6B26FB2313C23F98000766DE /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6B41E3F313C26BF400A35DD6 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				6B41E3EC13C26BDE00A35DD6 /* male.png */,
+				6B41E3ED13C26BDE00A35DD6 /* female.png */,
+				6B41E3EE13C26BDE00A35DD6 /* background.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		6B71DD8913C26B8900FD23B0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6B71DD7513C268DD00FD23B0 /* DBSignupViewController.xib */,
+				6B26FB2813C23F98000766DE /* MainWindow.xib */,
+				6B26FB2E13C23F98000766DE /* RootViewController.xib */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6B26FB1113C23F98000766DE /* DBSignup */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6B26FB3313C23F98000766DE /* Build configuration list for PBXNativeTarget "DBSignup" */;
+			buildPhases = (
+				6B26FB0E13C23F98000766DE /* Sources */,
+				6B26FB0F13C23F98000766DE /* Frameworks */,
+				6B26FB1013C23F98000766DE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DBSignup;
+			productName = DBSignup;
+			productReference = 6B26FB1213C23F98000766DE /* DBSignup.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6B26FB0913C23F97000766DE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = 03081340121;
+			};
+			buildConfigurationList = 6B26FB0C13C23F97000766DE /* Build configuration list for PBXProject "DBSignup" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 6B26FB0713C23F97000766DE;
+			productRefGroup = 6B26FB1313C23F98000766DE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6B26FB1113C23F98000766DE /* DBSignup */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6B26FB1013C23F98000766DE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B26FB2113C23F98000766DE /* InfoPlist.strings in Resources */,
+				6B26FB2A13C23F98000766DE /* MainWindow.xib in Resources */,
+				6B26FB3013C23F98000766DE /* RootViewController.xib in Resources */,
+				6B71DD7713C268DD00FD23B0 /* DBSignupViewController.xib in Resources */,
+				6B41E3EF13C26BDE00A35DD6 /* male.png in Resources */,
+				6B41E3F013C26BDE00A35DD6 /* female.png in Resources */,
+				6B41E3F113C26BDE00A35DD6 /* background.png in Resources */,
+				6B41E3F513C26CF500A35DD6 /* LICENSE in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6B26FB0E13C23F98000766DE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B26FB2413C23F98000766DE /* main.m in Sources */,
+				6B26FB2713C23F98000766DE /* DBSignupAppDelegate.m in Sources */,
+				6B26FB2D13C23F98000766DE /* RootViewController.m in Sources */,
+				6B71DD7613C268DD00FD23B0 /* DBSignupViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		6B26FB1F13C23F98000766DE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6B26FB2013C23F98000766DE /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		6B26FB2813C23F98000766DE /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6B26FB2913C23F98000766DE /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		6B26FB2E13C23F98000766DE /* RootViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6B26FB2F13C23F98000766DE /* en */,
+			);
+			name = RootViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6B26FB3113C23F98000766DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		6B26FB3213C23F98000766DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		6B26FB3413C23F98000766DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DBSignup/DBSignup-Prefix.pch";
+				INFOPLIST_FILE = "DBSignup/DBSignup-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		6B26FB3513C23F98000766DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DBSignup/DBSignup-Prefix.pch";
+				INFOPLIST_FILE = "DBSignup/DBSignup-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6B26FB0C13C23F97000766DE /* Build configuration list for PBXProject "DBSignup" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6B26FB3113C23F98000766DE /* Debug */,
+				6B26FB3213C23F98000766DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6B26FB3313C23F98000766DE /* Build configuration list for PBXNativeTarget "DBSignup" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6B26FB3413C23F98000766DE /* Debug */,
+				6B26FB3513C23F98000766DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6B26FB0913C23F97000766DE /* Project object */;
+}
