@@ -14,6 +14,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.title = @"Main";
 }
 
 - (void)viewWillAppear:(BOOL)animated

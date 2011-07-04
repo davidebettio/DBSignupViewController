@@ -19,7 +19,6 @@
 		6B41E3EF13C26BDE00A35DD6 /* male.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B41E3EC13C26BDE00A35DD6 /* male.png */; };
 		6B41E3F013C26BDE00A35DD6 /* female.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B41E3ED13C26BDE00A35DD6 /* female.png */; };
 		6B41E3F113C26BDE00A35DD6 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B41E3EE13C26BDE00A35DD6 /* background.png */; };
-		6B41E3F513C26CF500A35DD6 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 6B41E3F413C26CF500A35DD6 /* LICENSE */; };
 		6B71DD7613C268DD00FD23B0 /* DBSignupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B71DD7413C268DD00FD23B0 /* DBSignupViewController.m */; };
 		6B71DD7713C268DD00FD23B0 /* DBSignupViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B71DD7513C268DD00FD23B0 /* DBSignupViewController.xib */; };
 /* End PBXBuildFile section */
@@ -42,7 +41,6 @@
 		6B41E3EC13C26BDE00A35DD6 /* male.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = male.png; sourceTree = "<group>"; };
 		6B41E3ED13C26BDE00A35DD6 /* female.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = female.png; sourceTree = "<group>"; };
 		6B41E3EE13C26BDE00A35DD6 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
-		6B41E3F413C26CF500A35DD6 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		6B71DD7313C268DD00FD23B0 /* DBSignupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBSignupViewController.h; sourceTree = "<group>"; };
 		6B71DD7413C268DD00FD23B0 /* DBSignupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBSignupViewController.m; sourceTree = "<group>"; };
 		6B71DD7513C268DD00FD23B0 /* DBSignupViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DBSignupViewController.xib; sourceTree = "<group>"; };
@@ -100,7 +98,6 @@
 				6B26FB2613C23F98000766DE /* DBSignupAppDelegate.m */,
 				6B26FB2B13C23F98000766DE /* RootViewController.h */,
 				6B26FB2C13C23F98000766DE /* RootViewController.m */,
-				6B41E3F413C26CF500A35DD6 /* LICENSE */,
 				6B26FB1D13C23F98000766DE /* Supporting Files */,
 			);
 			path = DBSignup;
@@ -194,7 +191,6 @@
 				6B41E3EF13C26BDE00A35DD6 /* male.png in Resources */,
 				6B41E3F013C26BDE00A35DD6 /* female.png in Resources */,
 				6B41E3F113C26BDE00A35DD6 /* background.png in Resources */,
-				6B41E3F513C26CF500A35DD6 /* LICENSE in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
