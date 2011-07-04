@@ -1,3 +1,3 @@
 DBSignupViewController provide a view controller for a complete signup like latest version of Foursquare app (3.2.1)
 
-[![](http://dl.dropbox.com/u/378729/MBProgressHUD/5-thumb.png)](http://dl.dropbox.com/u/378729/MBProgressHUD/5.png)
+[![](https://s3-eu-west-1.amazonaws.com/public.davidebettio.com/DBSignupViewController1.png)](https://s3-eu-west-1.amazonaws.com/public.davidebettio.com/DBSignupViewController1.png)
