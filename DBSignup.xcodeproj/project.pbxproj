@@ -21,6 +21,7 @@
 		6B41E3F113C26BDE00A35DD6 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B41E3EE13C26BDE00A35DD6 /* background.png */; };
 		6B71DD7613C268DD00FD23B0 /* DBSignupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B71DD7413C268DD00FD23B0 /* DBSignupViewController.m */; };
 		6B71DD7713C268DD00FD23B0 /* DBSignupViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B71DD7513C268DD00FD23B0 /* DBSignupViewController.xib */; };
+		6B752F2813C75F910023D62C /* background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B752F2713C75F910023D62C /* background@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		6B71DD7313C268DD00FD23B0 /* DBSignupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBSignupViewController.h; sourceTree = "<group>"; };
 		6B71DD7413C268DD00FD23B0 /* DBSignupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBSignupViewController.m; sourceTree = "<group>"; };
 		6B71DD7513C268DD00FD23B0 /* DBSignupViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DBSignupViewController.xib; sourceTree = "<group>"; };
+		6B752F2713C75F910023D62C /* background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "background@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,9 +119,10 @@
 		6B41E3F313C26BF400A35DD6 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				6B41E3EE13C26BDE00A35DD6 /* background.png */,
+				6B752F2713C75F910023D62C /* background@2x.png */,
 				6B41E3EC13C26BDE00A35DD6 /* male.png */,
 				6B41E3ED13C26BDE00A35DD6 /* female.png */,
-				6B41E3EE13C26BDE00A35DD6 /* background.png */,
 			);
 			name = Images;
 			sourceTree = "<group>";
@@ -191,6 +194,7 @@
 				6B41E3EF13C26BDE00A35DD6 /* male.png in Resources */,
 				6B41E3F013C26BDE00A35DD6 /* female.png in Resources */,
 				6B41E3F113C26BDE00A35DD6 /* background.png in Resources */,
+				6B752F2813C75F910023D62C /* background@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
