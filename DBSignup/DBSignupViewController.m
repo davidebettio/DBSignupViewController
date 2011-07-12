@@ -24,6 +24,8 @@
 @synthesize birthdayTextField = birthdayTextField_;
 @synthesize genderTextField = genderTextField_;
 @synthesize phoneTextField = phoneTextField_;
+@synthesize photoButton = photoButton_;
+@synthesize termsTextView = termsTextView_;
 
 @synthesize emailLabel = emailLabel_;
 @synthesize passwordLabel = passwordLabel_;
@@ -57,6 +59,8 @@
     RELEASE_SAFELY(birthdayTextField_);
     RELEASE_SAFELY(genderTextField_);
     RELEASE_SAFELY(phoneTextField_);
+    RELEASE_SAFELY(photoButton_);
+    RELEASE_SAFELY(termsTextView_);
     
     RELEASE_SAFELY(emailLabel_);
     RELEASE_SAFELY(passwordLabel_);
@@ -99,7 +103,7 @@
     [super viewDidLoad];
     
     // Signup button
-    UIBarButtonItem *signupBarItem = [[UIBarButtonItem alloc] initWithTitle:NSLocalizedString(@"signup", @"") style:UIBarButtonItemStyleBordered target:self action:@selector(signupButtonHandler:)];
+    UIBarButtonItem *signupBarItem = [[UIBarButtonItem alloc] initWithTitle:NSLocalizedString(@"signup", @"") style:UIBarButtonItemStyleBordered target:self action:@selector(signup:)];
     self.navigationItem.rightBarButtonItem = signupBarItem;
     [signupBarItem release];
     
@@ -175,7 +179,7 @@
     self.genderLabel.text = [NSLocalizedString(@"gender", @"") uppercaseString]; 
     self.phoneLabel.text = [NSLocalizedString(@"phone", @"") uppercaseString];
     self.phoneTextField.placeholder = NSLocalizedString(@"optional", @"");
-    
+    self.termsTextView.text = NSLocalizedString(@"terms", @"");
 }
 
 
@@ -192,11 +196,41 @@
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
+
+#pragma mark - IBActions
+
+- (IBAction)choosePhoto:(id)sender
+{
+    UIActionSheet *choosePhotoActionSheet;
+    
+    if([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {
+        choosePhotoActionSheet = [[UIActionSheet alloc] initWithTitle:NSLocalizedString(@"choose_photo", @"")
+                                                             delegate:self 
+                                                    cancelButtonTitle:NSLocalizedString(@"cancel", @"") 
+                                               destructiveButtonTitle:nil
+                                                    otherButtonTitles:NSLocalizedString(@"take_photo_from_camera", @""), NSLocalizedString(@"take_photo_from_library", @""), nil];
+    } else {
+        choosePhotoActionSheet = [[UIActionSheet alloc] initWithTitle:NSLocalizedString(@"choose_photo", @"")
+                                                             delegate:self 
+                                                    cancelButtonTitle:NSLocalizedString(@"cancel", @"") 
+                                               destructiveButtonTitle:nil
+                                                    otherButtonTitles:NSLocalizedString(@"take_photo_from_library", @""), nil];
+    }
+    
+    [choosePhotoActionSheet showInView:self.view];
+    [choosePhotoActionSheet release];
+}
+
+
 #pragma mark - Others
 
-- (void)signupButtonHandler:(id)sender
+- (void)signup:(id)sender
 {
+    [self resignKeyboard:nil];
     
+    // Check fields
+    
+    // Make request
 }
 
 - (void)resignKeyboard:(id)sender
@@ -371,5 +405,52 @@
     [self setGenderData];
 }
 
+
+#pragma mark - UIActionSheetDelegate
+
+- (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+	NSUInteger sourceType = 0;
+    if([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {
+        switch (buttonIndex) {
+            case 0:
+                sourceType = UIImagePickerControllerSourceTypeCamera;
+                break;
+            case 1:
+                sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
+                break;
+            case 2:
+                return;
+        }
+    } else {
+        if (buttonIndex == 1) {
+            return;
+        } else {
+            sourceType = UIImagePickerControllerSourceTypeSavedPhotosAlbum;
+        }
+    }
+    
+	UIImagePickerController *imagePickerController = [[UIImagePickerController alloc] init];
+	imagePickerController.delegate = self;
+	imagePickerController.allowsEditing = YES;
+    imagePickerController.sourceType = sourceType;
+	[self presentModalViewController:imagePickerController animated:YES];
+}
+
+
+#pragma mark - UIImagePickerControllerDelegate
+
+- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info 
+{
+	[picker dismissModalViewControllerAnimated:YES];
+	self.photo = [info objectForKey:UIImagePickerControllerEditedImage];
+	[self.photoButton setImage:self.photo forState:UIControlStateNormal];
+}
+
+
+- (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker
+{
+	[self dismissModalViewControllerAnimated:YES];
+}
 
 @end

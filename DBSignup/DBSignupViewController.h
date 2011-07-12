@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DBSignupViewController : UIViewController <UIPickerViewDelegate, UIPickerViewDataSource, UITextFieldDelegate> {
+@interface DBSignupViewController : UIViewController <UIPickerViewDelegate, UIPickerViewDataSource, UITextFieldDelegate, UIActionSheetDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate> {
     UITextField *nameTextField_;
     UITextField *lastNameTextField_;
     UITextField *emailTextField_;
@@ -16,6 +16,8 @@
     UITextField *birthdayTextField_;
     UITextField *genderTextField_;
     UITextField *phoneTextField_;
+    UIButton *photoButton_;
+    UITextView *termsTextView_;
     
     UILabel *emailLabel_;
     UILabel *passwordLabel_;
@@ -39,6 +41,8 @@
 @property(nonatomic, retain) IBOutlet UITextField *birthdayTextField;
 @property(nonatomic, retain) IBOutlet UITextField *genderTextField;
 @property(nonatomic, retain) IBOutlet UITextField *phoneTextField;
+@property(nonatomic, retain) IBOutlet UIButton *photoButton;
+@property(nonatomic, retain) IBOutlet UITextView *termsTextView;
 
 @property(nonatomic, retain) IBOutlet UILabel *emailLabel;
 @property(nonatomic, retain) IBOutlet UILabel *passwordLabel;
@@ -54,6 +58,8 @@
 @property(nonatomic, retain) NSString *gender;
 @property(nonatomic, retain) UIImage *photo;
 
+- (IBAction)choosePhoto:(id)sender;
+
 - (void)resignKeyboard:(id)sender;
 - (void)previousField:(id)sender;
 - (void)nextField:(id)sender;
@@ -64,5 +70,6 @@
 - (void)setBirthdayData;
 - (void)setGenderData;
 - (void)birthdayDatePickerChanged:(id)sender;
+- (void)signup:(id)sender;
 
 @end
