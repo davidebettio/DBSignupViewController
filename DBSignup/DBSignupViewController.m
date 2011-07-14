@@ -117,8 +117,8 @@
         [dateComponents setYear:-18];
         NSDate *selectedDate = [[NSCalendar currentCalendar] dateByAddingComponents:dateComponents toDate:currentDate  options:0];
         [dateComponents release];
-        self.birthdayDatePicker.date = selectedDate;
-        self.birthdayDatePicker.maximumDate = currentDate;
+        [self.birthdayDatePicker setDate:selectedDate animated:NO];
+        [self.birthdayDatePicker setMaximumDate:currentDate];
     }
     
     // Gender picker
