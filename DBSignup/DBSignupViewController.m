@@ -180,6 +180,9 @@
     self.phoneLabel.text = [NSLocalizedString(@"phone", @"") uppercaseString];
     self.phoneTextField.placeholder = NSLocalizedString(@"optional", @"");
     self.termsTextView.text = NSLocalizedString(@"terms", @"");
+    
+    // Reset labels colors
+    [self resetLabelsColors];
 }
 
 
@@ -239,6 +242,7 @@
     if ([firstResponder isKindOfClass:[UITextField class]]) {
         [firstResponder resignFirstResponder];
         [self animateView:1];
+        [self resetLabelsColors];
     }
 }
 
@@ -252,6 +256,11 @@
         [self animateView:previousTag];
         UITextField *previousField = (UITextField *)[self.view viewWithTag:previousTag];
         [previousField becomeFirstResponder];
+        UILabel *nextLabel = (UILabel *)[self.view viewWithTag:previousTag + 10];
+        if (nextLabel) {
+            [self resetLabelsColors];
+            [nextLabel setTextColor:[DBSignupViewController labelSelectedColor]];
+        }
         [self checkSpecialFields:previousTag];
     }
 }
@@ -266,6 +275,11 @@
         [self animateView:nextTag];
         UITextField *nextField = (UITextField *)[self.view viewWithTag:nextTag];
         [nextField becomeFirstResponder];
+        UILabel *nextLabel = (UILabel *)[self.view viewWithTag:nextTag + 10];
+        if (nextLabel) {
+            [self resetLabelsColors];
+            [nextLabel setTextColor:[DBSignupViewController labelSelectedColor]];
+        }
         [self checkSpecialFields:nextTag];
     }
 }
@@ -343,6 +357,25 @@
     [self setBirthdayData];
 }
 
+- (void)resetLabelsColors
+{
+    self.emailLabel.textColor = [DBSignupViewController labelNormalColor];
+    self.passwordLabel.textColor = [DBSignupViewController labelNormalColor];
+    self.birthdayLabel.textColor = [DBSignupViewController labelNormalColor];
+    self.genderLabel.textColor = [DBSignupViewController labelNormalColor];
+    self.phoneLabel.textColor = [DBSignupViewController labelNormalColor];
+}
+
++ (UIColor *)labelNormalColor
+{
+    return [UIColor colorWithRed:0.016 green:0.216 blue:0.286 alpha:1.000];
+}
+
++ (UIColor *)labelSelectedColor
+{
+    return [UIColor colorWithRed:0.114 green:0.600 blue:0.737 alpha:1.000];
+}
+
 #pragma mark - UITextFieldDelegate
 
 - (void)textFieldDidBeginEditing:(UITextField *)textField
@@ -351,6 +384,11 @@
     [self animateView:tag];
     [self checkBarButton:tag];
     [self checkSpecialFields:tag];
+    UILabel *label = (UILabel *)[self.view viewWithTag:tag + 10];
+    if (label) {
+        [self resetLabelsColors];
+        [label setTextColor:[DBSignupViewController labelSelectedColor]];
+    }
 }
 
 - (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string

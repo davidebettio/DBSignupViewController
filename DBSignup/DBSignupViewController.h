@@ -71,5 +71,8 @@
 - (void)setGenderData;
 - (void)birthdayDatePickerChanged:(id)sender;
 - (void)signup:(id)sender;
+- (void)resetLabelsColors;
 
++ (UIColor *)labelNormalColor;
++ (UIColor *)labelSelectedColor;
 @end
